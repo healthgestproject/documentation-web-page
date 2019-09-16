@@ -33,8 +33,8 @@ function esconde() {
 }
 
 function escondeCol() {
-  var x = document.getElementById("EAColombia");
-  var y = document.getElementById("EAColombiaHide");
+  var x = document.getElementById("EACol");
+  var y = document.getElementById("EAColHide");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.src = "img/down.png";
@@ -45,7 +45,7 @@ function escondeCol() {
 }
 
 function escondeEEUU() {
-  var x = document.getElementById("EEUU");
+  var x = document.getElementById("EAEEUU");
   var y = document.getElementById("EAEEUUHide");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -56,7 +56,7 @@ function escondeEEUU() {
   }
 }
 function escondeUK() {
-  var x = document.getElementById("UK");
+  var x = document.getElementById("EAUK");
   var y = document.getElementById("EAUKHide");
   if (x.style.display === "none") {
     x.style.display = "block";
