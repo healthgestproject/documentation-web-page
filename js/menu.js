@@ -55,7 +55,7 @@ function escondeEEUU() {
     y.src = "img/up.png";
   }
 }
-function escondeUK) {
+function escondeUK() {
   var x = document.getElementById("UK");
   var y = document.getElementById("EAUKHide");
   if (x.style.display === "none") {
