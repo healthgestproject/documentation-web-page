@@ -19,3 +19,50 @@ var currentScrollPos = window.pageYOffset;
     }
     prevScrollpos = currentScrollPos;
 }
+
+function esconde() {
+  var x = document.getElementById("EAPerú");
+  var y = document.getElementById("EAPerúHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.src = "img/down.png";
+  } else {
+    x.style.display = "none";
+    y.src = "img/up.png";
+  }
+}
+
+function esconde() {
+  var x = document.getElementById("EAColombia");
+  var y = document.getElementById("EAColombiaHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.src = "img/down.png";
+  } else {
+    x.style.display = "none";
+    y.src = "img/up.png";
+  }
+}
+
+function esconde() {
+  var x = document.getElementById("EEUU");
+  var y = document.getElementById("EAEEUUHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.src = "img/down.png";
+  } else {
+    x.style.display = "none";
+    y.src = "img/up.png";
+  }
+}
+function esconde() {
+  var x = document.getElementById("UK");
+  var y = document.getElementById("EAUKHide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.src = "img/down.png";
+  } else {
+    x.style.display = "none";
+    y.src = "img/up.png";
+  }
+}
