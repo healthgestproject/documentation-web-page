@@ -120,6 +120,36 @@ hr {
   transition: top 0.3s;
 }
 
+.teal,
+.hover-teal:hover{
+    color:#fff!important;background-color:#009688!important
+}
+.button:hover{
+    color:#000!important;
+    background-color:#ccc!important
+}
+
+.sidebar{
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto
+}
+.border-right{
+    border-left:1px solid #ccc!important; 
+    border-top:1px solid #ccc!important
+}
+
+.bar-item{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0
+}
 
 .menu {
   position: relative;
@@ -130,6 +160,12 @@ hr {
 .menu-table {
   padding: 10px 10px;
   width: 100%;
+  margin: 0;
+}
+
+.menu-table2 {
+  padding: 0;
+  width: 50%;
   margin: 0;
 }
 

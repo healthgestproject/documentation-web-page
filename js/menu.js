@@ -9,18 +9,22 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos && window.pageYOffset > 350) {
-        document.getElementById("menu").style.top = "0";
+
         document.getElementById("menu").classList.add("sticky");
+        document.getElementById("menu2").classList.add("sticky");
     } else if (prevScrollpos > currentScrollPos && window.pageYOffset < 350){
-        document.getElementById("menu").style.top = "0";
+
         document.getElementById("menu").classList.remove("sticky");
+        document.getElementById("menu2").classList.remove("sticky");
     } else if (prevScrollpos < currentScrollPos && window.pageYOffset < 350){
-        document.getElementById("menu").style.top = "0px";
+
         document.getElementById("menu").classList.remove("sticky");
+        document.getElementById("menu2").classList.remove("sticky");
         
     }else if (prevScrollpos < currentScrollPos && window.pageYOffset > 350){
-        document.getElementById("menu").style.top = "0px";
+
         document.getElementById("menu").classList.add("sticky");
+        document.getElementById("menu2").classList.add("sticky");
     }
     prevScrollpos = currentScrollPos;
 }
@@ -70,4 +74,12 @@ function escondeUK() {
     x.style.display = "none";
     y.src = "img/up.png";
   }
+}
+
+function openWeek() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeWeek() {
+  document.getElementById("mySidebar").style.display = "none";
 }
