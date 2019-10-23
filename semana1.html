@@ -22,6 +22,22 @@
     .sticky {
       background-color:#010315;
     }
+    
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 
@@ -77,23 +93,40 @@
 <!-----------------About Us--------------------->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 style="text-align: center; font-size: 40px">Desarrollo de página web</h2>
+            <h2 style="text-align: center; font-size: 40px">Antecedentes y estado del arte</h2>
             <hr style="background-color: #7b9eff; height: 1px; border: 0">
             <p class="text" style="text-align: justify; font-size: 18px">
-                La página web está destinada a ser el principal medio para la documentación de nuestro trabajo; en ella se mostrarán los avances semanales, así como también la presentación del grupo y del proyecto. Es por ello que el diseño de la página debe estar correctamente optimizado para la presentación de los datos recaudados, sin mostrar información o cuadros de más, y aún más importante, debe ser sencillo de navegar en él.
-              </p>
+            El análisis de las soluciones existentes involucra la investigación detallada para
+entender qué productos (o servicios) establecidos o emergentes se encuentran
+desarrollados con un enfoque en la adquisición y/o mantenimiento de equipos
+médicos, cómo es su funcionamiento y en qué circunstancias son usados.
+La tecnología encontrada se caracteriza por ser tecnología blanda, provenientes de
+Estados Unidos, Reino Unido, Colombia y Perú.
+    
+            </p>
           </div>
-          <div class="flex-item flex-column">
-              <p style="font-size: 25px; margin-bottom: 0">Brackets Portable</p>
-              <hr style="background-color: #7b9eff; height: 1px; border: 0">
-            </div>
         </div>
 
 <!--------------------------------------------->
 <!-------------------Equipo--------------------->
         <div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">
-            <img class="image" src="img/Semana1-LogoBrackets.png">
+            <button type="button" class="collapsible">Estados Unidos</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Reino Unido</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Colombia</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Perú</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
           </div>
           <div class="flex-item flex-item-stretch flex-column">
             <p class="text" style="text-align: justify">
@@ -167,7 +200,23 @@
 
 function closeWeek() {
   document.getElementById("mySidebar").style.display = "none";
-}</script>
+}
+  
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
     
 </body>
 
