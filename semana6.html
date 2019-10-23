@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Team 04 || Semana 3</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-proyecto {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+      
+    .sticky {
+      background-color:#010315;
+    }
+  </style>
+</head>
+
+<body>
+<!--------- NAV BAR --------->
+  <div class="menu-container" id="menu">
+      <div class="menu">
+          <div class="menu-table flex-row-space-between">
+            <div class="logo flex-row-center">
+              <a href="index.html">Team 04</a>
+            </div>
+            <a class="menu-button" tabindex="0" href="javascript:void(0)">
+              <img src="img/menu.png">
+            </a>
+            <div class="menu-items flex-row-center flex-item">
+              <a href="index.html" class="menu-index">Home</a>
+              <a href="team.html" class="menu-team">Team</a>
+              <a href="proyecto.html" class="menu-proyecto" style="opacity: 1; font-weight: 700; color: rgb(255,255,255)">Project</a>
+              <a href="bitacora.html" class="menu-embedding">Bitácora</a>
+            </div>
+          </div>
+        </div>
+    </div>
+<!---------------------------------->
+  <div class="content-container" style="position:relative; background-color: ">
+<!-------------------------------CABECERA--------------------------------->
+    <div class="image parallax" style="background-image: url(img/Home-semana03.PNG); min-height: 350px; margin: 0; z-index: 1">
+        <div class="content-table flex-column" style="background-color: rgba(0, 0, 0, 0.72)">
+            <div class="flex-item flex-column" style="position: relative; top: 100px">
+            <h2 style="align-self: center; color: white; font-size: 55px; text-align: center">Semana 3</h2>
+            <h4 style="align-self: center; color: #bfbfbf; font-size: 18px"></h4>
+            </div>  
+        </div>
+      </div>
+<!------------------------------------------------------------------------->
+      <!--Menu de semanas--------------------->
+      <div class="sidebar border-right" style="display:none; position: fixed; right: 5px" id="mySidebar">
+                <div class="flex-column">
+                <button onclick="closeWeek()" class="bar-item button" style="font-size: 17">Close</button>
+                <a href="semana1.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 1</a>
+                <a href="semana2.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 2</a>
+                <a href="semana3.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 3</a>
+                <a href="semana4.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 4</a>
+                <a href="semana5.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 5</a>
+                </div>
+</div>
+<div style="position: fixed; z-index: 2; bottom: 10px; right: 10px"><a class="custom-button custom-button-info" style="border-radius: 10px; width: 100; background-color: rgba(0, 13, 67, 0.88)" onclick="openWeek()">Semanas</a></div>
+  <!-------------------------------------------->
+<!--/_/_/_/_/_/_/_/_/_/_/_/------CONTENIDO------/_/_/_/_/_/_/_/_/_/_/_/-->
+    <br>
+        </div>
+      </div>
+
+<!--------------------------------------------->
+<!-------------------Dato Estadístico 2 --------------------->
+   <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-item flex-column">
+          <h2>Normas, Regulación de la tecnología relacionada con el Prototipo</h2>
+            <p>
+            En base a las fichas técnicas encontradas, la normativa aplicada a la
+tecnología relacionada a nuestra solución se basa en la normativa
+relacionada tanto para seguridad en equipos médicos y sistemas de
+gestión de calidad en salud.<br><br>
+6.1 ISO 9001:2015 QUALITY MANAGEMENT SYSTEMS –
+REQUIREMENTS <br>
+La ISO 9001:2015 la norma internacional para los sistemas de gestión de
+calidad. Proporciona una estructura y un conjunto de principios que
+aseguran un enfoque lógico a la gestión con el fin de satisfacer las
+necesidades de los clientes y partes interesadas.<br>
+Especifica los requisitos para un sistema de gestión de calidad cuando una
+organización:<br>
+a. Necesita demostrar su capacidad para proporcionar constantemente
+productos y servicios que cumplan con los requisitos legales y
+reglamentarios aplicables al cliente.<br>
+b. Tiene como objetivo mejorar la satisfacción del cliente a través de la
+aplicación efectiva del sistema, incluido los procesos para la mejora del
+sistema y la garantía de conformidad con el cliente y los requisitos
+legales y reglamentarios<br>
+Estos requisitos están destinados a ser aplicables a cualquier organización
+independientemente de los productos y servicios que proporciona.<br><br>
+6.2 ISO 13485:2016 MEDICAL DEVICES – QUALITY
+MANAGEMENT SYSTEMS – REQUIREMENTS FOR REGULATORY
+PURPOSES<br>
+La ISO 13485:2016 es una norma internacional para los sistemas de
+gestión de calidad destinado para organizaciones involucradas en una o
+más etapas del ciclo de vida de un dispositivo médico, incluido el diseño y 
+desarrollo, producción, almacenamiento y distribución, instalación, servicio
+y desmantelamiento final, eliminación de dispositivos médicos, y
+actividades asociadas (por ejemplo, soporte técnico).<br>
+ISO 13485:2016 es una norma basada en la norma ISO 9001:2008,
+incluyendo requisitos únicos para productos médicos.<br>
+La norma está diseñada para ayudar a que las organizaciones centren su
+sistema de gestión y prácticas en reforzar la gestión de riesgos y cumplir
+con los requisitos regulatorios. Su principal objetivo es armonizar los
+requisitos para los productos sanitarios. Incluye requisitos específicos para
+la fabricación.<br><br>
+6.3 IEC 60601 MEDICAL ELECTRICAL EQUIPMENT <br>
+La IEC 60601 es series de normas que se aplica a la seguridad básica y al
+rendimiento esencial de los equipos eléctricos médicos y los sistemas
+eléctricos médicos para su uso en el entorno de atención médica
+domiciliaria.<br>
+Dentro de las fichas técnicas encontradas la normativa indicada se centra
+en la norma IEC 60601 – 1 General Requirements y la norma IEC 60601 –
+2 – 25 Safety of Electrocardiograms<br>
+La norma general IEC 6060 – 1 proporciona los requisitos generales de la
+serie de normas 60601, por lo cual es un punto de referencia ampliamente
+aceptado para equipos eléctricos médicos<br>
+La norma IEC 60601 – 2 – 25 es una norma específica para seguridad
+eléctrica en electrocardiógrafos mencionado en la ficha técnica Madhya
+Pradesh Publci Health Services Corp. Ltd. (MPPHSCL)<br>
+Sin embargo, dentro de las series de normas de seguridad eléctrica IEC
+60601, se encuentra la norma IEC 60601-2-4 Particular requirements for
+the basic safety and essential performance of cardiac defibrillators. No
+mencionada por ninguna de las fichas técnicas anteriormente mencionadas<br><br>
+1.4IEC 60529 INGRESS PROTECTION <br>
+Estándar que se aplica típicamente a productos comerciales y su
+capacidad para evitar que el medio ambiente interfiera con la operación de
+un producto.<br>
+Las clasificaciones se definen por las letras IP seguidas de dos dígitos y
+una letra opcional. Como se define en la norma internacional IEC 60529,
+clasifica los grados de protección proporcionados contra la intrusión de
+objetos sólidos (incluidas partes del cuerpo como manos y dedos), polvo,
+contacto accidental y agua en los cuadros eléctricos. El estándar tiene
+como objetivo proporcionar a los usuarios información más detallada que
+términos de marketing vagos como impermeabilidad.
+          </p>
+            
+            <div class="control-group" style="align-self: center">
+                  
+                  <a class="custom-button custom-button-info" href="semana1.html" style="border-radius: 10px">Semana 1</a>
+                
+                  <a class="custom-button custom-button-info" href="semana3.html" style="border-radius: 10px">Semana 3</a>
+                  
+              </div>
+          </div>
+          </div>
+
+    <br>
+<!--/-/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/-->
+      
+<!-----------------PIE DE PÁGINA--------------------->
+    <div class="flex-row" style="background-color: #4b4b4b">
+        <div class="content" style="font-size: 12px; align-self: : center; text-align: center">
+            <div class="content-table flex-column" style="align-content: center">
+            <div class="flex-item flex-column">
+
+                <div class="flex-row" style="color: white">
+                </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+<!--------------------------------------------->
+<script>function openWeek() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function closeWeek() {
+  document.getElementById("mySidebar").style.display = "none";
+}</script>
+    
+</body>
+
+</html>
