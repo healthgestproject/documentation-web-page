@@ -66,18 +66,37 @@
     <div style="position: fixed; z-index: 2; bottom: 10px; right: 10px"><a class="custom-button custom-button-info" style="border-radius: 10px; width: 100; background-color: rgba(0, 13, 67, 0.88)" onclick="openWeek()">Semanas</a>
     </div>
 <!-------------------------------------------->
-<!--/_/_/_/_/_/_/_/_/_/_/_/------CONTENIDO------/_/_/_/_/_/_/_/_/_/_/_/--> 
+<!--/_/_/_/_/_/_/_/_/_/_/_/------CONTENIDO------/_/_/_/_/_/_/_/_/_/_/_/-->
+    <!-----------------Avance--------------------->
+    <div class="flex-row" style="background-color: #80d3c6">
+        <div class="content" style="width:100%">
+            <div class="flex-row" style="padding: 10px">
+                <div class="flex-item flex-column" style="max-width: 75%">
+                    <h3 style="color: #0f0f0f; font-weight: 100; font-family: Helvetica">Informe completo con lo avances del proyecto.</h3>
+                </div>
+                <div class="flex-item flex-column" style="position: absolute; right: 0px">
+                    <div class="control-group">
+                        <a class="custom-button custom-button-info" 
+                           download="PBD-Informe.pdf" 
+                           href="PBD-Informe.pdf" 
+                           style="border-radius: 10px; self-align:center">Descarga</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+<!--------------------------------------------->
     <div class="content">
         <div class="content-table flex-column">
             <h2>Determinación de Necesidad</h2>
             <div class="flex-item flex-column">
                 <div class="flex-row">
-                    <div class="flex-column" style="width: 33.3%; font-size-adjust: auto; font-size: 14px">
+                    <div class="flex-column" style="width: 33.3%; font-size-adjust: auto; align-self:flex-end">
                         <p style="margin: 10px; text-align: center">Brecha en la eficiencia y tecnología en las etapas de evaluación, presupuestación, educación y mantenimiento del cuclo de vida de los desfibriladores
                         </p>
                         <hr style="margin: 10px">
                     </div>
-                    <div class="flex-column" style="width: 33.3%; align-content: center">
+                    <div class="flex-column" style="width: 33.3%; align-content: center; align-self:flex-end">
                         <p style="margin: 10px; text-align: center">Personal clínico involucrado en el ciclo de vida de la tecnología del equipo biomédico desfibrilador.
                         </p>
                         <hr style="margin: 10px">
@@ -114,7 +133,6 @@
                     <button class="diagram-block blue-block" style="height: 50px; width: 300px; max-width: 45%">Necesidad</button>
                 </div>
             </div>
-            <h2>Determinación de Necesidad</h2>
             <p>En base a la identificación del problema, población y resultado esperado es posible elaborar la exploración de las necesidades. A continuación, se muestran los 4 componentes para la exploración de las necesidades y debajo, la exploración específica para este caso clínico. 
             </p>
             <div class="flex-item flex-column">
@@ -156,7 +174,9 @@
                     </div>
                 </div>
             </div>
-            <br><br><br>
+            <br>
+            <p>Dentro de cada componente, se evalúan distintos elementos, correspondiente a la evaluación específica para este caso clínico.
+            </p>
             <div class="flex-item flex-column">
                 <div class="flex-row">
                     <div class="flex-row" style="width: 43%">
@@ -203,7 +223,7 @@
                             </div>
                             <div class="flex-row" style="width: 60%">
                                     <div class="flex-row" style="width: 100%">
-                                        <button class="diagram-block sec-block" style="margin-left: 5px; padding: 5px">Computarized<br> systems</button>
+                                        <button class="diagram-block sec-block" style="margin-left: 5px; padding: 5px">Computarized<br> system</button>
                                     </div>
                                     <div class="flex-row" style="width: 100%">
                                         <button class="diagram-block sec-block" style="margin-left: 5px; padding: 5px">Guides</button>
@@ -231,6 +251,7 @@
                     </div>
                 </div>
             </div>
+            <br><br>
             <div class="control-group" style="align-self: center">
                   
                   <a class="custom-button custom-button-info" href="semana2.html" style="border-radius: 10px">Semana 2</a>
