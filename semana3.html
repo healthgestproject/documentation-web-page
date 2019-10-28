@@ -18,82 +18,218 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
-      
-    .sticky {
-      background-color:#010315;
-    }
   </style>
 </head>
 
 <body>
 <!--------- NAV BAR --------->
-  <div class="menu-container" id="menu">
-      <div class="menu">
-          <div class="menu-table flex-row-space-between">
-            <div class="logo flex-row-center">
-              <a href="index.html">Team 04</a>
+    <div class="menu-container" id="menu">
+        <div class="menu">
+            <div class="menu-table flex-row-space-between">
+                <div class="logo flex-row-center">
+                    <a href="index.html">Team 04</a>
+                </div>
+                <a class="menu-button" tabindex="0" href="javascript:void(0)">
+                    <img src="img/menu.png">
+                </a>
+                <div class="menu-items flex-row-center flex-item">
+                    <a href="index.html" class="menu-index">Home</a>
+                    <a href="team.html" class="menu-team">Team</a>
+                    <a href="proyecto.html" class="menu-proyecto" style="opacity: 1; font-weight: 700; color: rgb(255,255,255)">Project</a>
+                    <a href="bitacora.html" class="menu-embedding">Bitácora</a>
+                </div>
             </div>
-            <a class="menu-button" tabindex="0" href="javascript:void(0)">
-              <img src="img/menu.png">
-            </a>
-            <div class="menu-items flex-row-center flex-item">
-              <a href="index.html" class="menu-index">Home</a>
-              <a href="team.html" class="menu-team">Team</a>
-              <a href="proyecto.html" class="menu-proyecto" style="opacity: 1; font-weight: 700; color: rgb(255,255,255)">Project</a>
-              <a href="bitacora.html" class="menu-embedding">Bitácora</a>
-            </div>
-          </div>
         </div>
     </div>
 <!---------------------------------->
-  <div class="content-container" style="position:relative; background-color: ">
-<!-------------------------------CABECERA--------------------------------->
-    <div class="image parallax" style="background-image: url(img/Home-semana03.PNG); min-height: 350px; margin: 0; z-index: 1">
-        <div class="content-table flex-column" style="background-color: rgba(0, 0, 0, 0.72)">
-            <div class="flex-item flex-column" style="position: relative; top: 100px">
-            <h2 style="align-self: center; color: white; font-size: 55px; text-align: center">Semana 3</h2>
-            <h4 style="align-self: center; color: #bfbfbf; font-size: 18px"></h4>
-            </div>  
+<!-------------------------------CABECERA-------------------------------->
+    <div class="content-container" style="position:relative; background-color: ">
+        <div class="image parallax" style="background-image: url(img/Home-semana03.PNG); min-height: 350px; margin: 0; z-index: 1">
+            <div class="content-table flex-column" style="background-color: rgba(0, 0, 0, 0.72)">
+                <div class="flex-item flex-column" style="position: relative; top: 100px">
+                    <h2 style="align-self: center; color: white; font-size: 55px; text-align: center">Semana 3</h2>
+                </div>  
+            </div>
         </div>
-      </div>
-<!------------------------------------------------------------------------->
-      <!--Menu de semanas--------------------->
-      <div class="sidebar border-right" style="display:none; position: fixed; right: 5px" id="mySidebar">
-                <div class="flex-column">
-                <button onclick="closeWeek()" class="bar-item button" style="font-size: 17">Close</button>
-                <a href="semana1.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 1</a>
-                <a href="semana2.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 2</a>
-                <a href="semana3.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 3</a>
-                <a href="semana4.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 4</a>
-                <a href="semana5.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 5</a>
+    </div>
+<!----------------------------------------------------------------------->
+<!----------------------Menu de semanas--------------------->
+    <div class="sidebar border-right" style="display:none; position: fixed; right: 5px" id="mySidebar">
+        <div class="flex-column">
+            <a href="semana1.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 1</a>
+            <a href="semana2.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 2</a>
+            <a href="semana3.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 3</a>
+            <a href="semana4.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 4</a>
+            <a href="semana5.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 5</a>
+        </div>
+    </div>
+    <div style="position: fixed; z-index: 2; bottom: 10px; right: 10px"><a class="custom-button custom-button-info" style="border-radius: 10px; width: 100; background-color: rgba(0, 13, 67, 0.88)" onclick="openWeek()">Semanas</a>
+    </div>
+<!-------------------------------------------->
+<!--/_/_/_/_/_/_/_/_/_/_/_/------CONTENIDO------/_/_/_/_/_/_/_/_/_/_/_/--> 
+    <div class="content">
+        <div class="content-table flex-column">
+            <h2>Determinación de Necesidad</h2>
+            <div class="flex-item flex-column">
+                <div class="flex-row">
+                    <div class="flex-column" style="width: 33.3%; font-size-adjust: auto; font-size: 14px">
+                        <p style="margin: 10px; text-align: center">Brecha en la eficiencia y tecnología en las etapas de evaluación, presupuestación, educación y mantenimiento del cuclo de vida de los desfibriladores
+                        </p>
+                        <hr style="margin: 10px">
+                    </div>
+                    <div class="flex-column" style="width: 33.3%; align-content: center">
+                        <p style="margin: 10px; text-align: center">Personal clínico involucrado en el ciclo de vida de la tecnología del equipo biomédico desfibrilador.
+                        </p>
+                        <hr style="margin: 10px">
+                    </div>
+                    <div class="flex-column" style="width: 33.3%">
+                        <p style="margin: 10px; text-align: center">Eficiencia en las fases determinadas del ciclo de vida de la tecnología, que resulta en la reducción de costos a largo plazo, ahorro en tiempo invertido, reducción del error humano en la gestión y facilidad de selección de equipos adecuados según sus requerimientos específicos.
+                        </p>
+                        <hr style="margin: 10px">
+                    </div>
                 </div>
-</div>
-<div style="position: fixed; z-index: 2; bottom: 10px; right: 10px"><a class="custom-button custom-button-info" style="border-radius: 10px; width: 100; background-color: rgba(0, 13, 67, 0.88)" onclick="openWeek()">Semanas</a></div>
-  <!-------------------------------------------->
-<!--/_/_/_/_/_/_/_/_/_/_/_/------CONTENIDO------/_/_/_/_/_/_/_/_/_/_/_/-->
-    <br>
-        </div>
-      </div>
-
-<!--------------------------------------------->
-<!-------------------Dato Estadístico 2 --------------------->
-   <div class="content">
-      <div class="content-table flex-column">
-        <div class="flex-item flex-column">
-          <h2>Determinación de Necesidad</h2>
-            <p>En base a la identificación del problema, población y resultado esperado es
-              posible elaborar la exploración de las necesidades. A continuación, se
-              muestran los 4 componentes para la exploración de las necesidades y debajo,
-              la exploración específica para este caso clínico. 
-          </p>
-            <div class="flex-item flex-column">
-            <img class="image max-width-full" src="img/1-DetNecesidad.png" style="align-self: center; max-width: 600px">
+                <div class="flex-row">
+                    <div class="flex-column" style="width: 35%">
+                        <button class="diagram-block purple-block" style="position: relative; right: 0%">Problem</button>
+                    </div>
+                    <div class="flex-column" style="width: 30%; align-content: center">
+                        <button class="diagram-block purple-block">Population</button>
+                    </div>
+                    <div class="flex-column" style="width: 35%">
+                        <button class="diagram-block purple-block" style="position: relative; left: 0%">Outcome</button>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-column" style="width: 30%">
+                        <span style='font-size:50px; align-self:flex-end; color: #8947c1'>&#8600;</span>
+                    </div>
+                    <div class="flex-column" style="width: 40%">
+                        <span style='font-size:50px; align-self: center; color: #8947c1'>&#8595;</span>
+                    </div>
+                    <div class="flex-column" style="width: 30%">
+                        <span style='font-size:50px; color: #8947c1'>&#8601;</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <button class="diagram-block blue-block" style="height: 50px; width: 300px; max-width: 45%">Necesidad</button>
+                </div>
             </div>
-            
+            <h2>Determinación de Necesidad</h2>
+            <p>En base a la identificación del problema, población y resultado esperado es posible elaborar la exploración de las necesidades. A continuación, se muestran los 4 componentes para la exploración de las necesidades y debajo, la exploración específica para este caso clínico. 
+            </p>
             <div class="flex-item flex-column">
-            <img class="image max-width-400" src="img/2-DetNecesidad.png" style="align-self: center; max-width: 600px">
+                <div class="flex-row">
+                    <div class="flex-column" style="width: 50%">
+                        <button class="diagram-block lightblue-block sec-block">Disease state<br> funamentals</button>
+                    </div>
+                    <div class="flex-column" style="width: 50%">
+                        <button class="diagram-block sec-block purple-block">Existin<br>solutions</button>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-column" style="width: 30%; margin: auto">
+                        <span style='font-size:50px; align-self:flex-end; color: #8947c1'>&#8600;&#8598;</span>
+                    </div>
+                    <div class="flex-column" style="width: 30%; margin: auto">
+                        <span style='font-size:50px; color: #8947c1'>&#8601;&#8599;</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-column" style="width: 100%">
+                        <button class="diagram-block circle-block red-block" style="width: 150px; height: 150px">Problem<br><br>Population<br><br>Outcome</button>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-column" style="width: 30%; margin: auto">
+                        <span style='font-size:50px; align-self:flex-end; color: #8947c1'>&#8601;&#8599;</span>
+                    </div>
+                    <div class="flex-column" style="width: 30%; margin: auto">
+                        <span style='font-size:50px; color: #8947c1'>&#8600;&#8598;</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-column" style="width: 50%">
+                        <button class="diagram-block sec-block orange-block">Stakeholder <br>analysis</button>
+                    </div>
+                    <div class="flex-column" style="width: 50%">
+                        <button class="diagram-block sec-block green-block">Market<br> analysis</button>
+                    </div>
+                </div>
             </div>
-         
+            <br><br><br>
+            <div class="flex-item flex-column">
+                <div class="flex-row">
+                    <div class="flex-row" style="width: 43%">
+                        <div class="flex-row" style="width: 100%">
+                            <div class="flex-row" style="width: 60%">
+                                <div class="flex-row" style="width: 100%">
+                                    <button class="diagram-block sec-block" style="margin-right: 5px; padding: 5px">Especificaciones<br>técnicas</button>
+                                </div>
+                                <div class="flex-row" style="width: 100%">
+                                    <button class="diagram-block sec-block" style="margin-right: 5px; padding: 5px">Ciclo de vida de<br>la tecnología</button>
+                                </div>
+                            </div>
+                            <div class="flex-row" style="width: 40%">
+                                <div class="flex-row" style="width: 100%">
+                                    <button class="diagram-block sec-block lightblue-block" style="margin-right: 0; padding: 10px">Disease state<br>fundamental</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-row" style="width: 100%; margin-top: 40px">
+                            <div class="flex-row" style="width: 60%">
+                                    <div class="flex-row" style="width: 100%">
+                                        <button class="diagram-block sec-block" style="margin-right: 5px; padding: 5px">Cycle of care<br>Stakeholders</button>
+                                    </div>
+                                    <div class="flex-row" style="width: 100%">
+                                        <button class="diagram-block sec-block" style="margin-right: 5px; padding: 5px">Flow of money<br>Stakeholders</button>
+                                    </div>
+                            </div>
+                            <div class="flex-row" style="width: 40%">
+                                <div class="flex-row" style="width: 100%">
+                                    <button class="diagram-block sec-block orange-block" style="padding: 10px; margin-right: 0">Stakeholder<br>analysis</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-row" style="width: 14%">
+                        <button class="diagram-block blue-block circle-block sec-block" style="width: 100px; height: 100px; padding: 2px">Problem<br>Population<br>Outcome</button>
+                    </div>
+                    <div class="flex-row" style="width: 43%">
+                        <div class="flex-row" style="width: 100%">
+                            <div class="flex-row" style="width: 40%">
+                                <div class="flex-row" style="height: 100%">
+                                    <button class="diagram-block sec-block purple-block" style="padding: 10px">Existing solutions</button>
+                                </div>
+                            </div>
+                            <div class="flex-row" style="width: 60%">
+                                    <div class="flex-row" style="width: 100%">
+                                        <button class="diagram-block sec-block" style="margin-left: 5px; padding: 5px">Computarized<br> systems</button>
+                                    </div>
+                                    <div class="flex-row" style="width: 100%">
+                                        <button class="diagram-block sec-block" style="margin-left: 5px; padding: 5px">Guides</button>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="flex-row" style="width: 100%; margin-top: 20px">
+                            <div class="flex-row" style="width: 40%">
+                                <div class="flex-row" style="height: 100%">
+                                    <button class="diagram-block sec-block green-block" style="padding: 10px">Market analysis</button>
+                                </div>
+                            </div>
+                            <div class="flex-row" style="width: 60%">
+                                    <div class="flex-row" style="width: 100%">
+                                        <button class="diagram-block sec-block" style="margin-left: 5px; padding: 5px">Market<br> landscape</button>
+                                    </div>
+                                    <div class="flex-row" style="width: 100%">
+                                        <button class="diagram-block sec-block" style="margin-left: 5px; padding: 5px">Market<br> segmentation</button>
+                                    </div>
+                                    <div class="flex-row" style="width: 100%">
+                                        <button class="diagram-block sec-block" style="margin-left: 5px; padding: 5px">Target<br> market</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="control-group" style="align-self: center">
                   
@@ -117,16 +253,9 @@
                 </div>
             </div>
         </div>
-      </div>
-  </div>
-<!--------------------------------------------->
-<script>function openWeek() {
-  document.getElementById("mySidebar").style.display = "block";
-}
 
-function closeWeek() {
-  document.getElementById("mySidebar").style.display = "none";
-}</script>
+
+<!--------------------------------------------->
     
 </body>
 

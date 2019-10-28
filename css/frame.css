@@ -86,7 +86,7 @@ h2-2 {
 
 h3 {
   font-size: 18px;
-  margin: 10px 0 0 0;
+  margin: 5px 15px 2px 0;
   padding: 0;
   font-weight: bold;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -265,6 +265,27 @@ hr {
   text-shadow: -1px 0 #125688, 0 1px #125688, 1px 0 #125688, 0 -1px #125688;
 }
 
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.sticky {
+        background-color:#010315;
+        box-shadow: 0 5px 10px 0 rgba(38, 38, 38, 0.6);
+}
+
 .week {
   position: relative;
   border-radius: 15px;
@@ -317,7 +338,7 @@ hr {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .content p a {

@@ -18,146 +18,170 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
-      
-    .sticky {
-      background-color:#010315;
-    }
   </style>
 </head>
 
 <body>
 <!--------- NAV BAR --------->
-  <div class="menu-container" id="menu">
-      <div class="menu">
-          <div class="menu-table flex-row-space-between">
-            <div class="logo flex-row-center">
-              <a href="index.html">Team 04</a>
+    <div class="menu-container" id="menu">
+        <div class="menu">
+            <div class="menu-table flex-row-space-between">
+                <div class="logo flex-row-center">
+                    <a href="index.html">Team 04</a>
+                </div>
+                <a class="menu-button" tabindex="0" href="javascript:void(0)">
+                    <img src="img/menu.png">
+                </a>
+                <div class="menu-items flex-row-center flex-item">
+                    <a href="index.html" class="menu-index">Home</a>
+                    <a href="team.html" class="menu-team">Team</a>
+                    <a href="proyecto.html" class="menu-proyecto" style="opacity: 1; font-weight: 700; color: rgb(255,255,255)">Project</a>
+                    <a href="bitacora.html" class="menu-embedding">Bitácora</a>
+                </div>
             </div>
-            <a class="menu-button" tabindex="0" href="javascript:void(0)">
-              <img src="img/menu.png">
-            </a>
-            <div class="menu-items flex-row-center flex-item">
-              <a href="index.html" class="menu-index">Home</a>
-              <a href="team.html" class="menu-team">Team</a>
-              <a href="proyecto.html" class="menu-proyecto" style="opacity: 1; font-weight: 700; color: rgb(255,255,255)">Project</a>
-              <a href="bitacora.html" class="menu-embedding">Bitácora</a>
-            </div>
-          </div>
         </div>
     </div>
 <!---------------------------------->
-  <div class="content-container" style="position:relative; background-color: ">
 <!-------------------------------CABECERA--------------------------------->
-    <div class="image parallax" style="background-image: url(img/Home-semana02.jpg); min-height: 350px; margin: 0; z-index: 1">
-        <div class="content-table flex-column" style="background-color: rgba(0, 0, 0, 0.72)">
-            <div class="flex-item flex-column" style="position: relative; top: 100px">
-            <h2 style="align-self: center; color: white; font-size: 55px; text-align: center">Semana 2</h2>
-            <h4 style="align-self: center; color: #bfbfbf; font-size: 18px"></h4>
-            </div>  
+    <div class="content-container" style="position:relative">
+        <div class="image parallax" style="background-image: url(img/Home-semana02.jpg); min-height: 350px; margin: 0; z-index: 1">
+            <div class="content-table flex-column" style="background-color: rgba(0, 0, 0, 0.72)">
+                <div class="flex-item flex-column" style="position: relative; top: 100px">
+                    <h2 style="align-self: center; color: white; font-size: 55px; text-align: center">Semana 2</h2>
+                </div>  
+            </div>
         </div>
-      </div>
+    </div>
 <!------------------------------------------------------------------------->
-      <!--Menu de semanas--------------------->
-      <div class="sidebar border-right" style="display:none; position: fixed; right: 5px" id="mySidebar">
-                <div class="flex-column">
-                <button onclick="closeWeek()" class="bar-item button" style="font-size: 17">Close</button>
-                <a href="semana1.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 1</a>
-                <a href="semana2.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 2</a>
-                <a href="semana3.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 3</a>
-                <a href="semana4.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 4</a>
-                <a href="semana5.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 5</a>
-                </div>
-</div>
-<div style="position: fixed; z-index: 2; bottom: 10px; right: 10px"><a class="custom-button custom-button-info" style="border-radius: 10px; width: 100; background-color: rgba(0, 13, 67, 0.88)" onclick="openWeek()">Semanas</a></div>
-  <!-------------------------------------------->
-<!--/_/_/_/_/_/_/_/_/_/_/_/------CONTENIDO------/_/_/_/_/_/_/_/_/_/_/_/-->
-    <br>
-    <div class="content">
-      <div class="content-table flex-column">
-<!-----------------About Us--------------------->
-        <div class="flex-row">
-          <div class="control-group" style="align-self: center; margin:auto">
-                  <a class="custom-button custom-button-info" download="PBD-Informe.pdf" href="PBD-Informe.pdf" style="border-radius: 10px; self-align:center">Informe de avance</a>
-              </div>
-        </div> 
-      </div>
-     </div>  
+<!----------------------Menu de semanas--------------------->
+    <div class="sidebar border-right" style="display:none; position: fixed; right: 5px" id="mySidebar">
+        <div class="flex-column">
+            <a href="semana1.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 1</a>
+            <a href="semana2.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 2</a>
+            <a href="semana3.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 3</a>
+            <a href="semana4.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 4</a>
+            <a href="semana5.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 5</a>
         </div>
-      </div>
-
+    </div>
+    <div style="position: fixed; z-index: 2; bottom: 10px; right: 10px"><a class="custom-button custom-button-info" style="border-radius: 10px; width: 100; background-color: rgba(0, 13, 67, 0.88)" onclick="openWeek()">Semanas</a>
+    </div>
+<!-------------------------------------------->
+<!---------------CONTENIDO-------------------->
+<!-----------------Avance--------------------->
+    <div class="flex-row" style="background-color: #80d3c6">
+        <div class="content" style="width:100%">
+            <div class="flex-row" style="padding: 10px">
+                <div class="flex-item flex-column" style="max-width: 75%">
+                    <h3 style="color: #0f0f0f; font-weight: 100; font-family: Helvetica">Informe completo con lo avances del proyecto.</h3>
+                </div>
+                <div class="flex-item flex-column" style="position: absolute; right: 0px">
+                    <div class="control-group">
+                        <a class="custom-button custom-button-info" 
+                           download="PBD-Informe.pdf" 
+                           href="PBD-Informe.pdf" 
+                           style="border-radius: 10px; self-align:center">Descarga</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
 <!--------------------------------------------->
 <!-------------------Dato Estadístico 2 --------------------->
-   <div class="content">
-      <div class="content-table flex-column">
-        <div class="flex-item flex-column">
-            <p>La observación es la base de la estructuración del problema, así como de la
-              población objetivo y lso resultados esperados. Estos 3 componentes deben ser
-              definidos primero antes de la determinación de la necesidad.
-          </p>
+    <div class="content">
+        <div class="content-table flex-column">
             <div class="flex-item flex-column">
-            <img class="image max-width-full" src="img/1-NeedStatement.png" style="align-self: center; max-width: 600px">
-            </div>
-            <p><b>Planificación:</b><br>
+                <p>La observación es la base de la estructuración del problema, así como de la
+                    población objetivo y lso resultados esperados. Estos 3 componentes deben ser
+                    definidos primero antes de la determinación de la necesidad.
+                </p>
+                <div class="flex-item flex-column">
+                    <div class="flex-row">
+                        <div class="flex-column" style="width: 35%">
+                            <button class="diagram-block purple-block" style="position: relative; right: 0%">Problem</button>
+                        </div>
+                        <div class="flex-column" style="width: 30%; align-content: center">
+                            <button class="diagram-block purple-block">Population</button>
+                        </div>
+                        <div class="flex-column" style="width: 35%">
+                            <button class="diagram-block purple-block" style="position: relative; left: 0%">Outcome</button>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="flex-column" style="width: 30%">
+                            <span style='font-size:50px; align-self:flex-end; color: #8947c1'>&#8600;</span>
+                        </div>
+                        <div class="flex-column" style="width: 40%">
+                            <span style='font-size:50px; align-self: center; color: #8947c1'>&#8595;</span>
+                        </div>
+                        <div class="flex-column" style="width: 30%">
+                            <span style='font-size:50px; color: #8947c1'>&#8601;</span>
+                        </div>
+                    </div>
+
+                    <div class="flex-row">
+                        <button class="diagram-block red-block" style="height: 120px; width: 400px">
+                            <h2>Need Statement</h2>
+                            <p style="">"A way to adress (problem) in (population) that (outcome)"</p>
+                        </button>
+                    </div>
+                </div>
+                <p><b>Planificación:</b><br>
                 El jefe de ingeniería biomédica de una clínica presentó una curva de
                 aprendizaje alta respecto a la dificultad y tiempo en la proceso de evaluación y
                 presupuesto de un nuevo equipo biomédico.<br>
                 - Tiempo de 1 mes para el proceso de evaluación y presupuesto de un nuevo
                 equipo biomédico.
-            </p>
-            <p><b>Implentación:</b><br>
+                </p>
+                <p><b>Implentación:</b><br>
                 - Implementación del equipo en una zona posiblemente dañina por la prescencia
                     de goteo de agua del techo.
-            </p>
-            <p><b>Gestión:</b><br>
+                </p>
+                <p><b>Gestión:</b><br>
                 - Uso solo de registros físicos de mantenimientos programados <br> - Posible error humano en la evaluación de los auto diagnósticos realizados por
-personal (enfermeras). <br> - Enfermeras de alta rotación y poca profundidad de conocimiento del proceso
-de mantenimiento diario de autodiagnostico.
-            </p>
-            <div class="flex-item flex-column">
-            <img class="image max-width-400" src="img/2-Observaciones.png" style="align-self: center; max-width: 600px">
+                personal (enfermeras). <br> - Enfermeras de alta rotación y poca profundidad de conocimiento del proceso
+                de mantenimiento diario de autodiagnostico.
+                </p>
+                <div class="flex-item flex-column">
+                    <div class="flex-row">
+                        <div class="flex-column" style="width: 40%">
+                            <button class="diagram-block blue-block" style="height: 50px; width: 180px">Observaciones</button>
+                        </div>
+                        <div class="flex-column" style="width: 50%; align-content: center">
+                            <div>
+                                <p>El jefe de ingeniería biomédica de la clínica presentó una curva de aptendizaje alta respecto a la dificultad de tiempo en el proceso de ecaluación y presupuestacuón de un nuevo equipo.
+                                </p>
+                                <hr>
+                            </div>
+                            <div>
+                                <p>El jefe de ingeniería biomédica de la clínica presentó una curva de aptendizaje alta respecto a la dificultad de tiempo en el proceso de ecaluación y presupuestacuón de un nuevo equipo.
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>En base a estas observaciones de elaboró los 3 componentes necesarios para
+                    la declaración de necesidad.</p>
             </div>
-            <p>En base a estas observaciones de elaboró los 3 componentes necesarios para
-la declaración de necesidad.</p>
-            <div class="flex-item flex-column">
-            <img class="image max-width-400" src="img/3-Observaciones.png" style="align-self: center; max-width: 600px">
-            </div>
-         
-            </div>
+            <br>
             <div class="control-group" style="align-self: center">
-                  
                   <a class="custom-button custom-button-info" href="semana1.html" style="border-radius: 10px">Semana 1</a>
-                
                   <a class="custom-button custom-button-info" href="semana3.html" style="border-radius: 10px">Semana 3</a>
-                  
               </div>
-          </div>
-          </div>
-
-    <br>
-    
+        </div>
+    </div>
+<br>
 <!--/-/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/-->
-      
 <!-----------------PIE DE PÁGINA--------------------->
     <div class="flex-row" style="background-color: #4b4b4b">
         <div class="content" style="font-size: 12px; align-self: : center; text-align: center">
             <div class="content-table flex-column" style="align-content: center">
-            <div class="flex-item flex-column">
-
-                </div>
+                <div class="flex-item flex-column">
                 </div>
             </div>
         </div>
-      </div>
-  </div>
-<!--------------------------------------------->
-<script>function openWeek() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeWeek() {
-  document.getElementById("mySidebar").style.display = "none";
-}</script>
-    
+    </div>
+<!---------------------------------------------> 
 </body>
 
 </html>

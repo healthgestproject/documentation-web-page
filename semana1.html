@@ -17,27 +17,7 @@
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
-    }
-      
-    .sticky {
-      background-color:#010315;
-    }
-    
-    .collapsible {
-      background-color: #777;
-      color: white;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 25px;
-    }
-
-    .active, .collapsible:hover {
-      background-color: #555;
-    }
+    }    
   </style>
 </head>
 
@@ -73,19 +53,19 @@
         </div>
       </div>
 <!------------------------------------------------------------------------->
-      <!--Menu de semanas--------------------->
-      <div class="sidebar border-right" style="display:none; position: fixed; right: 5px" id="mySidebar">
-                <div class="flex-column">
-                <button onclick="closeWeek()" class="bar-item button" style="font-size: 17">Close</button>
-                <a href="semana1.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 1</a>
-                <a href="semana2.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 2</a>
-                <a href="semana3.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 3</a>
-                <a href="semana4.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 4</a>
-                <a href="semana5.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 5</a>
-                </div>
-</div>
-<div style="position: fixed; z-index: 2; bottom: 10px; right: 10px"><a class="custom-button custom-button-info" style="border-radius: 10px; width: 100; background-color: rgba(0, 13, 67, 0.88)" onclick="openWeek()">Semanas</a></div>
-  <!-------------------------------------------->
+<!----------------------Menu de semanas--------------------->
+    <div class="sidebar border-right" style="display:none; position: fixed; right: 5px" id="mySidebar">
+        <div class="flex-column">
+            <a href="semana1.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 1</a>
+            <a href="semana2.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 2</a>
+            <a href="semana3.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 3</a>
+            <a href="semana4.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 4</a>
+            <a href="semana5.html" class="bar-item button" style="color:#000000; text-decoration: none">Semana 5</a>
+        </div>
+    </div>
+    <div style="position: fixed; z-index: 2; bottom: 10px; right: 10px"><a class="custom-button custom-button-info" style="border-radius: 10px; width: 100; background-color: rgba(0, 13, 67, 0.88)" onclick="openWeek()">Semanas</a>
+    </div>
+<!-------------------------------------------->
 <!--/_/_/_/_/_/_/_/_/_/_/_/------CONTENIDO------/_/_/_/_/_/_/_/_/_/_/_/-->
     <br><br>
     <div class="content">
@@ -194,14 +174,7 @@ Estados Unidos, Reino Unido, Colombia y Perú.
       </div>
   </div>
 <!--------------------------------------------->
-<script>function openWeek() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeWeek() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-  
+<script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -217,7 +190,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-    
 </body>
 
 </html>
